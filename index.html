@@ -9,9 +9,10 @@
 <!-- Performance hints -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.weserv.nl">
 <link rel="dns-prefetch" href="https://wa.me">
-<link rel="preload" as="image" href="hero-1.webp" fetchpriority="high">
-<link rel="preload" as="image" href="hero-2.webp" fetchpriority="low">
+<!-- Hero image preloaded via the compressed CDN (images.weserv.nl), not the raw GitHub file -->
+<link rel="preload" as="image" href="https://images.weserv.nl/?url=https%3A%2F%2Fraw.githubusercontent.com%2Fpropbillion%2Flodha-sylvan%2Fmain%2FLodha%20Silver%20Brochure%2017.jpg&w=1920&q=78&output=webp&we&af" fetchpriority="high">
 <link rel="preload" as="style" href="styles.css">
 
 <!-- Inline critical font-display hint -->
@@ -19,22 +20,22 @@
   /* Critical: prevent FOUT shift */
   html { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif; }
   /* Critical: hero placeholder background while image loads */
-  .hero { background: #1a1112; }
+  .hero { background: #0D1F30; }
   .hero2 { background: #fbfbfd; }
   /* Critical: prevent layout shift on hero img */
-  .hero-bg img, .hero2-img { background: #1a1112; }
+  .hero-bg img, .hero2-img { background: #0D1F30; }
   img { content-visibility: auto; }
 </style>
 
 <!-- Open Graph -->
 <meta property="og:title" content="Lodha Sylvan · Hinjewadi Phase 3 · Art Deco Residences">
 <meta property="og:description" content="15-acre development. 16 towers, only 4 units per floor. 2, 2.5, 3 &amp; 3.5 BHK Art Deco homes with a 5-acre podium landscape. Near Megapolis Circle Metro Station, Hinjewadi Phase 3.">
-<meta property="og:image" content="hero-1.webp">
+<meta property="og:image" content="https://images.weserv.nl/?url=https%3A%2F%2Fraw.githubusercontent.com%2Fpropbillion%2Flodha-sylvan%2Fmain%2FLodha%20Silver%20Brochure%2017.jpg&w=1200&q=82&output=jpg">
 <meta property="og:type" content="website">
-<meta name="theme-color" content="#5D2D2C">
+<meta name="theme-color" content="#1D4062">
 
 <!-- Favicon - Lodha Sylvan mark -->
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='4' fill='%235D2D2C'/%3E%3Ctext x='32' y='46' text-anchor='middle' font-family='Georgia,serif' font-style='italic' font-size='40' font-weight='500' fill='%23C98B85'%3EY%3C/text%3E%3C/svg%3E">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='4' fill='%231D4062'/%3E%3Ctext x='32' y='46' text-anchor='middle' font-family='Georgia,serif' font-style='italic' font-size='40' font-weight='500' fill='%238FB4D6'%3EL%3C/text%3E%3C/svg%3E">
 
 <!-- Fonts: Source Serif 4 (display) + Inter (body) - Adobe's signature pairing -->
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -92,7 +93,7 @@
 <!-- ============================ HERO (FULL BACKGROUND) ============================ -->
 <section class="hero">
   <div class="hero-bg">
-    <img src="hero-1.webp" alt="LODHA SYLVAN - Art Deco Towers, Hinjewadi Phase 3" width="1920" height="1080" fetchpriority="high" decoding="async">
+    <img data-src="Lodha_Sylvan_Brochure%2017.jpeg" alt="LODHA SYLVAN - Art Deco Towers, Hinjewadi Phase 3" width="1920" height="1080" fetchpriority="high" decoding="async">
   </div>
   <div class="hero-inner hero-inner-v2">
     <span class="hero-presents reveal">Lodha Presents</span>
@@ -243,7 +244,7 @@
     <div class="plan-grid">
       <div class="plan-card reveal">
         <div class="gated">
-          <img src="plan-3bhk-1106-1241.webp" alt="3 BHK with Study 1134 sqft floor plan" width="800" height="600" loading="lazy" decoding="async">
+          <img data-src="plan-3bhk-1106-1241.webp" alt="3 BHK with Study 1134 sqft floor plan" width="800" height="600" loading="lazy" decoding="async">
           <div class="gated-cta">
             <a href="https://wa.me/918857090799?text=Send%20me%203%20BHK%20with%20Study%201134%20sqft%20floor%20plan%20Lodha%20Sylvan" target="_blank" rel="noopener" class="btn btn-glass-brand btn-sm">Download Plan <span>→</span></a>
           </div>
@@ -256,7 +257,7 @@
 
       <div class="plan-card reveal reveal-d1">
         <div class="gated">
-          <img src="plan-3bhk-1139.webp" alt="3 BHK with Study and Staff Room floor plan" width="800" height="600" loading="lazy" decoding="async">
+          <img data-src="plan-3bhk-1139.webp" alt="3 BHK with Study and Staff Room floor plan" width="800" height="600" loading="lazy" decoding="async">
           <div class="gated-cta">
             <a href="https://wa.me/918857090799?text=Send%20me%203%20BHK%20with%20Study%20and%20Staff%20Room%20floor%20plan%20Lodha%20Sylvan" target="_blank" rel="noopener" class="btn btn-glass-brand btn-sm">Download Plan <span>→</span></a>
           </div>
@@ -269,7 +270,7 @@
 
       <div class="plan-card reveal reveal-d2">
         <div class="gated">
-          <img src="plan-3bhk-1291.webp" alt="3 BHK Residence 1134 sqft floor plan" width="800" height="600" loading="lazy" decoding="async">
+          <img data-src="plan-3bhk-1291.webp" alt="3 BHK Residence 1134 sqft floor plan" width="800" height="600" loading="lazy" decoding="async">
           <div class="gated-cta">
             <a href="https://wa.me/918857090799?text=Send%20me%203%20BHK%201134%20sqft%20floor%20plan%20Lodha%20Sylvan" target="_blank" rel="noopener" class="btn btn-glass-brand btn-sm">Download Plan <span>→</span></a>
           </div>
@@ -282,7 +283,7 @@
 
       <div class="plan-card reveal">
         <div class="gated">
-          <img src="plan-35bhk-1495.webp" alt="2.5 BHK with Study 950 sqft floor plan" width="800" height="600" loading="lazy" decoding="async">
+          <img data-src="plan-35bhk-1495.webp" alt="2.5 BHK with Study 950 sqft floor plan" width="800" height="600" loading="lazy" decoding="async">
           <div class="gated-cta">
             <a href="https://wa.me/918857090799?text=Send%20me%202.5%20BHK%20with%20Study%20950%20sqft%20floor%20plan%20Lodha%20Sylvan" target="_blank" rel="noopener" class="btn btn-glass-brand btn-sm">Download Plan <span>→</span></a>
           </div>
@@ -295,7 +296,7 @@
 
       <div class="plan-card reveal reveal-d1">
         <div class="gated">
-          <img src="plan-35bhk-1508.webp" alt="2 BHK Residence 836 sqft floor plan" width="800" height="600" loading="lazy" decoding="async">
+          <img data-src="plan-35bhk-1508.webp" alt="2 BHK Residence 836 sqft floor plan" width="800" height="600" loading="lazy" decoding="async">
           <div class="gated-cta">
             <a href="https://wa.me/918857090799?text=Send%20me%202%20BHK%20836%20sqft%20floor%20plan%20Lodha%20Sylvan" target="_blank" rel="noopener" class="btn btn-glass-brand btn-sm">Download Plan <span>→</span></a>
           </div>
@@ -308,7 +309,7 @@
 
       <div class="plan-card reveal reveal-d2">
         <div class="gated">
-          <img src="plan-35bhk-1600.webp" alt="3.5 BHK Garden Simplex 1850 sqft floor plan" width="800" height="600" loading="lazy" decoding="async">
+          <img data-src="plan-35bhk-1600.webp" alt="3.5 BHK Garden Simplex 1850 sqft floor plan" width="800" height="600" loading="lazy" decoding="async">
           <div class="gated-cta">
             <a href="https://wa.me/918857090799?text=Send%20me%203.5%20BHK%20Garden%20Simplex%20floor%20plan%20Lodha%20Sylvan" target="_blank" rel="noopener" class="btn btn-glass-brand btn-sm">Download Plan <span>→</span></a>
           </div>
@@ -355,13 +356,13 @@
       <span class="eyebrow" style="margin-bottom: 0; color: var(--gold-deep);">The Project</span>
     </div>
     <div class="ag-track" data-track>
-      <div class="ag-slide" data-caption="15 Acres · Hinjewadi Phase 3"><img src="gallery-1.webp" alt="The podium" width="900" height="600" loading="lazy" decoding="async"></div>
-            <div class="ag-slide" data-caption="16 Towers · Art Deco Residences"><img src="hero-2.webp" alt="The podium" width="900" height="600" loading="lazy" decoding="async"></div>
-      <div class="ag-slide" data-caption="5-Acre Podium Landscape"><img src="gallery-3.webp" alt="The water" width="900" height="600" loading="lazy" decoding="async"></div>
-      <div class="ag-slide" data-caption="Art Deco Facade Detailing"><img src="gallery-4.webp" alt="The gardens" width="900" height="600" loading="lazy" decoding="async"></div>
-      <div class="ag-slide" data-caption="Grand Clubhouse &amp; Reflective Pond"><img src="gallery-5.webp" alt="The hour" width="900" height="600" loading="lazy" decoding="async"></div>
-      <div class="ag-slide" data-caption="Curated Interiors"><img src="gallery-8.webp" alt="The architecture" width="900" height="600" loading="lazy" decoding="async"></div>
-      <div class="ag-slide" data-caption="Hinjewadi Phase 3's Newest Landmark"><img src="gallery-10.webp" alt="The promenade" width="900" height="600" loading="lazy" decoding="async"></div>
+      <div class="ag-slide" data-caption="15 Acres · Hinjewadi Phase 3"><img data-src="Lodha_Sylvan_Brochure%2023.jpeg" alt="The podium" width="900" height="600" loading="lazy" decoding="async"></div>
+            <div class="ag-slide" data-caption="16 Towers · Art Deco Residences"><img data-src="hero-2.webp" alt="The podium" width="900" height="600" loading="lazy" decoding="async"></div>
+      <div class="ag-slide" data-caption="5-Acre Podium Landscape"><img data-src="gallery-3.webp" alt="The water" width="900" height="600" loading="lazy" decoding="async"></div>
+      <div class="ag-slide" data-caption="Art Deco Facade Detailing"><img data-src="gallery-4.webp" alt="The gardens" width="900" height="600" loading="lazy" decoding="async"></div>
+      <div class="ag-slide" data-caption="Grand Clubhouse &amp; Reflective Pond"><img data-src="gallery-5.webp" alt="The hour" width="900" height="600" loading="lazy" decoding="async"></div>
+      <div class="ag-slide" data-caption="Curated Interiors"><img data-src="gallery-8.webp" alt="The architecture" width="900" height="600" loading="lazy" decoding="async"></div>
+      <div class="ag-slide" data-caption="Hinjewadi Phase 3's Newest Landmark"><img data-src="gallery-10.webp" alt="The promenade" width="900" height="600" loading="lazy" decoding="async"></div>
     </div>
     <div class="ag-caption-rail" data-caption-rail></div>
     <div class="ag-hint"><span>Swipe to explore</span> <span class="ag-arrow">→</span></div>
@@ -380,17 +381,43 @@
       <span class="eyebrow" style="margin-bottom: 0; color: var(--gold-deep);">30,000 Sq Ft Clubhouse &amp; Podium Amenities</span>
     </div>
     <div class="ag-track" data-track>
-      <div class="ag-slide" data-caption="Grand Clubhouse &amp; Banquet Hall"><img src="mandir-1.webp" alt="Clubhouse at Lodha Sylvan" width="900" height="600" loading="lazy" decoding="async"></div>
-      <div class="ag-slide" data-caption="Swimming Pool &amp; Cabanas"><img src="mandir-2.webp" alt="Infinity deck at twilight" width="900" height="600" loading="lazy" decoding="async"></div>
-      <div class="ag-slide" data-caption="Podium Gardens &amp; Reflection Pond"><img src="mandir-3.webp" alt="Sky lounge interiors at ~500 ft" width="900" height="600" loading="lazy" decoding="async"></div>
-      <div class="ag-slide" data-caption="Reflexology Path &amp; Walking Track"><img src="mandir-4.webp" alt="Wellness and indoor games" width="900" height="600" loading="lazy" decoding="async"></div>
-      <div class="ag-slide" data-caption="Yoga Lawn &amp; Wellness Spa"><img src="mandir-5.webp" alt="Rooftop social space" width="900" height="600" loading="lazy" decoding="async"></div>
-      <div class="ag-slide" data-caption="Padel, Volleyball &amp; Multi-Purpose Courts"><img src="mandir-6.webp" alt="Sky lounge at golden hour" width="900" height="600" loading="lazy" decoding="async"></div>
+      <div class="ag-slide" data-caption="Grand Clubhouse &amp; Banquet Hall"><img data-src="Lodha_Sylvan_Brochure%2026.jpeg" alt="Clubhouse at Lodha Sylvan" width="900" height="600" loading="lazy" decoding="async"></div>
+      <div class="ag-slide" data-caption="Swimming Pool &amp; Cabanas"><img data-src="Lodha_Sylvan_Brochure%2021.jpeg" alt="Infinity deck at twilight" width="900" height="600" loading="lazy" decoding="async"></div>
+      <div class="ag-slide" data-caption="Podium Gardens &amp; Reflection Pond"><img data-src="mandir-3.webp" alt="Sky lounge interiors at ~500 ft" width="900" height="600" loading="lazy" decoding="async"></div>
+      <div class="ag-slide" data-caption="Reflexology Path &amp; Walking Track"><img data-src="mandir-4.webp" alt="Wellness and indoor games" width="900" height="600" loading="lazy" decoding="async"></div>
+      <div class="ag-slide" data-caption="Yoga Lawn &amp; Wellness Spa"><img data-src="mandir-5.webp" alt="Rooftop social space" width="900" height="600" loading="lazy" decoding="async"></div>
+      <div class="ag-slide" data-caption="Padel, Volleyball &amp; Multi-Purpose Courts"><img data-src="mandir-6.webp" alt="Sky lounge at golden hour" width="900" height="600" loading="lazy" decoding="async"></div>
+      <div class="ag-slide" data-caption="Art-Deco Facade Detail"><img data-src="Lodha_Sylvan_Brochure%2017.jpeg" alt="Lodha Sylvan facade detail" width="900" height="600" loading="lazy" decoding="async"></div>
+      <div class="ag-slide" data-caption="Curated Interiors"><img data-src="Lodha_Sylvan_Brochure%2017.jpeg" alt="Lodha Sylvan interiors" width="900" height="600" loading="lazy" decoding="async"></div>
     </div>
     <div class="ag-caption-rail" data-caption-rail></div>
     <div class="ag-hint"><span>Swipe to explore</span> <span class="ag-arrow">→</span></div>
     <div class="gallery-cta-wrap">
       <a href="https://wa.me/918857090799?text=Send%20me%20the%20Lodha%20Sylvan%20amenities%20deck" target="_blank" rel="noopener" class="btn btn-glass-brand">Explore Amenities <span>→</span></a>
+    </div>
+  </div>
+
+<!-- ============================ NEW GALLERY: Life At Lodha Sylvan ============================ -->
+  <div id="extra-gallery" class="auto-gallery" data-autoslide="true">
+    <div class="ag-label">
+      <span class="eyebrow" style="margin-bottom: 0; color: var(--gold-deep);">Life At Lodha Sylvan</span>
+    </div>
+    <div class="ag-track" data-track>
+      <div class="ag-slide" data-caption="Art Deco Tower Facade"><img data-src="Lodha_Sylvan_Brochure%2015.jpeg" alt="Lodha Sylvan art deco tower facade" width="900" height="600" loading="lazy" decoding="async"></div>
+      <div class="ag-slide" data-caption="Private Deck Views"><img data-src="Lodha_Sylvan_Brochure%2012.jpeg" alt="Lodha Sylvan private deck views" width="900" height="600" loading="lazy" decoding="async"></div>
+      <div class="ag-slide" data-caption="Living &amp; Dining Spaces"><img data-src="Lodha_Sylvan_Brochure%205.jpeg" alt="Lodha Sylvan living and dining" width="900" height="600" loading="lazy" decoding="async"></div>
+      <div class="ag-slide" data-caption="Grand Entrance Lobby"><img data-src="Lodha_Sylvan_Brochure%202.jpeg" alt="Lodha Sylvan grand entrance lobby" width="900" height="600" loading="lazy" decoding="async"></div>
+      <div class="ag-slide" data-caption="Kids' Play Area"><img data-src="Lodha_Sylvan_Brochure%2012.jpeg" alt="Lodha Sylvan kids play area" width="900" height="600" loading="lazy" decoding="async"></div>
+      <div class="ag-slide" data-caption="Reflective Pond &amp; Grand Clubhouse"><img data-src="Lodha_Sylvan_Brochure%208.jpeg" alt="Lodha Sylvan reflective pond and clubhouse" width="900" height="600" loading="lazy" decoding="async"></div>
+      <div class="ag-slide" data-caption="Multi-Purpose Sports Courts"><img data-src="Lodha_Sylvan_Brochure%2024.jpeg" alt="Lodha Sylvan sports courts" width="900" height="600" loading="lazy" decoding="async"></div>
+      <div class="ag-slide" data-caption="Banquet &amp; Celebration Lawns"><img data-src="Lodha_Sylvan_Brochure%2026.jpeg" alt="Lodha Sylvan banquet lawns" width="900" height="600" loading="lazy" decoding="async"></div>
+      <div class="ag-slide" data-caption="Hospitality That Anticipates Every Need"><img data-src="Lodha_Sylvan_Brochure%2027.jpeg" alt="Lodha Sylvan hospitality" width="900" height="600" loading="lazy" decoding="async"></div>
+      <div class="ag-slide" data-caption="A Secure Haven"><img data-src="Lodha_Sylvan_Brochure%203.jpeg" alt="Lodha Sylvan security" width="900" height="600" loading="lazy" decoding="async"></div>
+    </div>
+    <div class="ag-caption-rail" data-caption-rail></div>
+    <div class="ag-hint"><span>Swipe to explore</span> <span class="ag-arrow">→</span></div>
+    <div class="gallery-cta-wrap">
+      <a href="https://wa.me/918857090799?text=Send%20me%20more%20Lodha%20Sylvan%20photos" target="_blank" rel="noopener" class="btn btn-glass-brand">See More Photos <span>→</span></a>
     </div>
   </div>
 
@@ -405,7 +432,7 @@
     <div class="plan-grid">
       <div class="plan-card reveal">
         <div class="gated">
-          <img src="masterplan.webp" alt="Detailed master plan" width="800" height="600" loading="lazy" decoding="async">
+          <img data-src="Lodha_Sylvan_Brochure%2032.jpeg" alt="Detailed master plan" width="800" height="600" loading="lazy" decoding="async">
           <div class="gated-cta">
             <a href="https://wa.me/918857090799?text=Send%20me%20Lodha%20Sylvan%20detailed%20master%20plan" target="_blank" rel="noopener" class="btn btn-glass-brand btn-sm">Download Master Plan <span>→</span></a>
           </div>
@@ -418,7 +445,7 @@
 
       <div class="plan-card reveal reveal-d1">
         <div class="gated">
-          <img src="tower-plan.webp" alt="Tower wise floor plans" width="800" height="600" loading="lazy" decoding="async">
+          <img data-src="tower-plan.webp" alt="Tower wise floor plans" width="800" height="600" loading="lazy" decoding="async">
           <div class="gated-cta">
             <a href="https://wa.me/918857090799?text=Send%20me%20Lodha%20Sylvan%20tower%20wise%20floor%20plans" target="_blank" rel="noopener" class="btn btn-glass-brand btn-sm">Download Tower Plan <span>→</span></a>
           </div>
@@ -431,7 +458,7 @@
 
       <div class="plan-card reveal reveal-d2">
         <div class="gated">
-          <img src="refuge-plan.webp" alt="Refuge floor plans" width="800" height="600" loading="lazy" decoding="async">
+          <img data-src="refuge-plan.webp" alt="Refuge floor plans" width="800" height="600" loading="lazy" decoding="async">
           <div class="gated-cta">
             <a href="https://wa.me/918857090799?text=Send%20me%20Lodha%20Sylvan%20refuge%20floor%20plans" target="_blank" rel="noopener" class="btn btn-glass-brand btn-sm">Download Refuge Plans <span>→</span></a>
           </div>
@@ -461,7 +488,7 @@
     <section class="hero2">
   <div class="hero2-frame">
     
-      <img src="skyclub-2.webp" alt="Lodha Sylvan clubhouse and amenity deck" class="hero2-img" width="1920" height="1080" loading="eager" decoding="async" fetchpriority="low">
+      <img data-src="skyclub-2.webp" alt="Lodha Sylvan clubhouse and amenity deck" class="hero2-img" width="1920" height="1080" loading="eager" decoding="async" fetchpriority="low">
     </div>
    
 
@@ -694,7 +721,7 @@
     <div class="plan-grid">
       <div class="plan-card reveal">
         <div class="gated">
-          <img src="inventory.webp" alt="Live inventory availability" width="800" height="600" loading="lazy" decoding="async">
+          <img data-src="inventory.webp" alt="Live inventory availability" width="800" height="600" loading="lazy" decoding="async">
           <div class="gated-cta">
             <a href="https://wa.me/918857090799?text=Send%20me%20Lodha%20Sylvan%20live%20inventory%20availability" target="_blank" rel="noopener" class="btn btn-glass-brand btn-sm">Download Inventory <span>→</span></a>
           </div>
@@ -707,7 +734,7 @@
 
       <div class="plan-card reveal reveal-d1">
         <div class="gated">
-          <img src="specifications.webp" alt="Lodha Sylvan home specifications" width="800" height="600" loading="lazy" decoding="async">
+          <img data-src="specifications.webp" alt="Lodha Sylvan home specifications" width="800" height="600" loading="lazy" decoding="async">
           <div class="gated-cta">
             <a href="https://wa.me/918857090799?text=Send%20me%20Lodha%20Sylvan%20specifications" target="_blank" rel="noopener" class="btn btn-glass-brand btn-sm">Download Specifications <span>→</span></a>
           </div>
@@ -720,7 +747,7 @@
 
       <div class="plan-card reveal reveal-d2">
         <div class="gated">
-          <img src="costsheet.webp" alt="Cost sheet and payment plan" width="800" height="600" loading="lazy" decoding="async">
+          <img data-src="costsheet.webp" alt="Cost sheet and payment plan" width="800" height="600" loading="lazy" decoding="async">
           <div class="gated-cta">
             <a href="https://wa.me/918857090799?text=Send%20me%20Lodha%20Sylvan%20complete%20cost%20sheet%20and%20payment%20plan" target="_blank" rel="noopener" class="btn btn-glass-brand btn-sm">Download Cost Sheet <span>→</span></a>
           </div>
@@ -838,7 +865,7 @@
         <p style="color: var(--gold-deep); margin-top: 1rem; font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 600;">PROPBILLION · Authorised Channel Partner · MahaRERA Agent No. A52100058176</p>
       </div>
       <div class="rera-qr">
-        <img src="qr.webp" alt="MahaRERA QR Code" width="140" height="140" loading="lazy">
+        <img data-src="qr.webp" alt="MahaRERA QR Code" width="140" height="140" loading="lazy">
         <div class="l">Scan to Verify</div>
       </div>
     </div>
@@ -1072,6 +1099,31 @@
     </a>
   </div>
 </div>
+
+<!-- ============================ AUTO IMAGE COMPRESSION ============================
+     Every content photo is marked data-src (not src) so the browser never fetches the
+     heavy original file. This runs immediately, rewrites each to a resized, recompressed
+     WebP via a free image proxy (quality 75, width matched to the image's real display
+     size), THEN sets it as the actual src. loading="lazy" on below-fold images still
+     works exactly as before - this only shrinks the bytes, it does not change when the
+     image loads. Looks the same to the visitor; loads dramatically faster on mobile data. -->
+<script>
+(function () {
+  var PROXY = 'https://wsrv.nl/?url=';
+  function proxied(absUrl, w) {
+    return PROXY + encodeURIComponent(absUrl) + '&w=' + w + '&q=75&output=webp&il';
+  }
+  document.querySelectorAll('img[data-src]').forEach(function (img) {
+    var rel = img.getAttribute('data-src');
+    if (!rel) return;
+    var abs = new URL(rel, document.baseURI).href;
+    var w = parseInt(img.getAttribute('width'), 10) || 1200;
+    var w2x = Math.min(w * 2, 2400);
+    img.src = proxied(abs, w);
+    img.srcset = proxied(abs, w) + ' 1x, ' + proxied(abs, w2x) + ' 2x';
+  });
+})();
+</script>
 
 <script src="script.js"></script>
 </body>
