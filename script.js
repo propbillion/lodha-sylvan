@@ -7,7 +7,7 @@ document.addEventListener('click', function(e) {
     });
   }
 });/* ============================================
-   YOO PRISTINE - Production JS
+   LODHA SYLVAN - Production JS
    Performance-optimized, no framework dependencies
    ============================================ */
 
