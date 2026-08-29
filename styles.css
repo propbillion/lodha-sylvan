@@ -1,5 +1,5 @@
 /* ============================================
-   YOO PRISTINE - Production Stylesheet
+   LODHA SYLVAN - Production Stylesheet
    Brand color #1D4062 (Maroon) · Pure White System
    Apple-grade refinement · Cinematic architectural
    ============================================ */
@@ -5280,22 +5280,25 @@ img { background-color: #ffffff !important; }
    3. Hero overlay — slightly less dim
    ============================================ */
 
-/* ---------- 1. HEADER BRAND TEXT (very slight size bump) ---------- */
+/* ---------- 1. HEADER BRAND TEXT (bigger, bolder) ---------- */
 .logo {
-  font-size: clamp(16px, 1.8vw, 21px) !important;
+  font-size: clamp(21px, 2.4vw, 28px) !important;
+  font-weight: 700 !important;
 letter-spacing: 0.045em !important;
 }
 
 @media (max-width: 520px) {
   .logo {
-    font-size: 15px !important;
+    font-size: 19px !important;
+    font-weight: 700 !important;
     letter-spacing: 0.03em !important;
   }
 }
 
 @media (max-width: 380px) {
   .logo {
-    font-size: 14px !important;
+    font-size: 17px !important;
+    font-weight: 700 !important;
   }
 }
 
@@ -5381,7 +5384,7 @@ letter-spacing: 0.045em !important;
 
 
 /* ============================================
-   PROJECT OVERRIDE — YOO PRISTINE
+   PROJECT OVERRIDE — LODHA SYLVAN
    Brand dark-red hero emphasis (default, none supplied)
    ============================================ */
 .hero-mainline em {
@@ -5444,4 +5447,18 @@ letter-spacing: 0.045em !important;
 .hsc-link {
   text-decoration: underline;
   text-underline-offset: 3px;
+}
+
+/* ---------- Header logo: bigger + bolder (final override) ---------- */
+.logo {
+  font-size: clamp(24px, 3vw, 36px) !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.05em !important;
+}
+@media (max-width: 520px) {
+  .logo {
+    font-size: 21px !important;
+    font-weight: 800 !important;
+    letter-spacing: 0.03em !important;
+  }
 }
